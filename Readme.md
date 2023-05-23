@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vadim Larsen](https://up.htmlacademy.ru/htmlcss/37/user/2354619).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Медведев] (https://htmlacademy.ru/profile/exteep).
 
 ---
 
