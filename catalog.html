@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип Седоны." src="img/page-header-logo.svg" width="140" height="70">
@@ -50,7 +51,7 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-container main-inner">
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -68,7 +69,7 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <div class="filter-1">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group infrastructure">
             <legend class="catalog-filter-title">
               <h3>Инфраструктура:</h3>
             </legend>
@@ -96,7 +97,7 @@
         </div>
 
         <div class="filter-2">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group type">
             <legend class="catalog-filter-title">
               <h3>Тип жилья:</h3>
             </legend>
@@ -124,7 +125,7 @@
         </div>
 
         <div class="filter-price">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group cost">
             <legend class="catalog-filter-title">
               <h3>Стоимость, ₽:</h3>
             </legend>
@@ -146,9 +147,6 @@
                 </div>
               </li>
             </ul>
-            <p class="price-adjustment">
-              <input type="range" min="0" max="15000" id="price">
-            </p>
           </fieldset>
         </div>
         <div class="buttons-filter">
@@ -167,14 +165,14 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
 
-          <div>
-            <a class="button button-active" href="#">
+          <div class="sorting">
+            <a class="button-sorting-active" href="#">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="button" href="#">
+            <a class="button-sorting" href="#">
               <span class="visually-hidden">Показать карточки c описанием</span>
             </a>
-            <a class="button" href="#">
+            <a class="button-sorting" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -184,8 +182,10 @@
               <div class="hotels-item">
               <img class="product-card-image" src="img/hotel-1.jpg" alt="Гостиница под открытым небом" width="300" height="212">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
+              <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 4000 ₽</span>
+              </div>
               <a class="button product-card-more" href="#">Подробнее</a>
               <button class="button product-card-favorites">В избранное</button>
                 <div class="rating-catalog">
@@ -200,8 +200,10 @@
               <div class="hotels-item">
               <img class="product-card-image" src="img/hotel-2.jpg" alt="Гостиница с видом на мост дьявола" width="300" height="212">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
+              <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 5000 ₽</span>
+              </div>
               <a class="button product-card-more" href="#">Подробнее</a>
               <button class="button product-card-favorites-current">В избранном</button>
                 <div class="rating-catalog">
@@ -216,8 +218,10 @@
               <div class="hotels-item">
               <img class="product-card-image" src="img/hotel-3.jpg" alt="Гостиница с видом на скалы" width="300" height="212">
               <h3 class="product-card-title">Desert Quail Inn</h3>
+              <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 2500 ₽</span>
+              </div>
               <a class="button product-card-more" href="#">Подробнее</a>
               <button class="button product-card-favorites">В избранное</button>
                 <div class="rating-catalog">
@@ -232,8 +236,10 @@
               <div class="hotels-item">
               <img class="product-card-image" src="img/hotel-4.jpg" alt="Гостиница с видом на достопримечательности" width="300" height="212">
               <h3 class="product-card-title">GreenTree Inn</h3>
+              <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 1500 ₽</span>
+              </div>
               <a class="button product-card-more" href="#">Подробнее</a>
               <button class="button product-card-favorites">В избранное</button>
                 <div class="rating-catalog">
@@ -284,7 +290,6 @@
 
       <footer class="page-footer">
         <section class="footer-contacts">
-          <div class="footer-contacts">
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="social-link" href="https://vk.com/htmlacademy">
@@ -302,14 +307,14 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="copyrights">
+            <h3 class="visually-hidden">Телефон</h3>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <h3 class="visually-hidden">Разработчик</h3>
             <a class="button-academy" href="https://htmlacademy.ru/">
               <img class="html-academy-logo" alt="HTML Academy" src="img/academy-logo.svg" width="115" height="33">
             </a>
-          </div>
         </section>
       </footer>
+    </div>
   </body>
 </html>
