@@ -354,7 +354,11 @@ img {
 .comfort-item {
   width: 400px;
   min-height: 385px;
-  padding: 60px 85px;
+  padding: 63px 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
 }
 
 .advantages-sublist-item {
@@ -373,12 +377,15 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 30px 0;
+  margin: 30px 0 11px;
 }
 
 .search-hotels {
   min-height: 406px;
-  padding: 96px 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-hotels h2 {
@@ -445,7 +452,11 @@ img {
   background-color: #82b3d3;
   background-size: cover;
   min-height: 415px;
-  padding: 96px 258px 104px 258px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
