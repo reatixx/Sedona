@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="padding-catalog">
     <div class="page-container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип Седоны." src="img/page-header-logo.svg" width="140" height="70">
       </a>
@@ -52,7 +53,7 @@
       </nav>
     </header>
 
-    <main class="main-container main-inner">
+    <main class="main-container main-inner" data-test="main">
       <header class="inner-header">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -65,7 +66,7 @@
           </li>
         </ul>
 
-      <section class="catalog-inf">
+      <section class="catalog-inf" data-test="filter">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -174,7 +175,7 @@
       </section>
       </header>
 
-        <section class="searching-results">
+        <section class="searching-results" data-test="catalog">
           <div class="hotels-searching-results">
             <h2>Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
@@ -290,7 +291,7 @@
         </ul>
         </div>
 
-        <section class="subscribe catalog">
+        <section class="subscribe catalog" data-test="subscribe">
           <div class="sub-news">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -303,7 +304,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-contacts">
           <div class="wrapper-social">
             <ul class="footer-social-list">
