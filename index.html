@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип Седоны." src="img/page-header-logo.svg" width="140" height="70">
       </a>
@@ -51,15 +52,15 @@
       </nav>
     </header>
 
-    <main class="main-container main-index">
-        <section class="hero">
+    <main class="main-container main-index" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона</h1>
           <div class="bg-hero">
           <img class="logo-text" src="img/welcome.svg" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!" width="458" height="352">
           </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="first_description">
             <h2 class="caption-hero">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="lead-hero">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -109,7 +110,7 @@
         </section>
 
 
-      <section class="comfort">
+      <section class="comfort" data-test="service">
         <ul class="advantages-sublist">
           <li class="advantages-sublist-item">
             <div class="comfort-item first">
@@ -137,7 +138,7 @@
         </ul>
       </section>
 
-      <section class="search">
+      <section class="search" data-test="search">
         <div class="search-hotels">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -145,7 +146,7 @@
         </div>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <div class="sub-news">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -158,7 +159,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-contacts">
         <div class="wrapper-social">
         <ul class="footer-social-list">
