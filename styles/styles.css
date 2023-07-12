@@ -64,6 +64,11 @@ body {
   color: #95BEDA;
 }
 
+.button:disabled {
+  color: #FFFFFF;
+  background: #E5E5E5;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -213,6 +218,11 @@ img {
 .want-this:active {
   color: #9E9089;
   background: #756157
+}
+
+.want-this:disabled {
+  color: #FFFFFF;
+  background: #E5E5E5;
 }
 
 .count {
@@ -485,6 +495,10 @@ img {
   background: #756157
 }
 
+.button-search:disabled {
+  color: #FFFFFF;
+  background: #E5E5E5;
+}
 
 /*Subscribe*/
 
