@@ -7,7 +7,6 @@
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
-    <div class="padding-catalog">
     <div class="page-container">
     <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
@@ -139,28 +138,24 @@
             </legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <div class="price-controls">
                   <label class="price">
-                    <input class="price-zone min" type="number" name="price-min" value="0">
-                    от
+                    <input class="price-zone min" type="text" name="price-min" value="0">
+                    <span class="price-from zero">от</span>
                   </label>
-                </div>
               </li>
               <li class="catalog-filter-item">
-                <div class="price-controls">
                   <label class="price reverse">
-                    <input class="price-zone max" type="number" name="price-max" value="9000">
-                    до
+                    <input class="price-zone max" type="text" name="price-max" value="9000">
+                    <span class="price-from nine-thousand">до</span>
                   </label>
-                </div>
               </li>
             </ul>
             <div class="slider-wrapper">
               <div class="slider-item">
-                <button class="slider-min">
+                <button class="button-slider slider-min">
                   <span class="visually-hidden">Минимальная цена</span>
                 </button>
-                <button class="slider-max">
+                <button class="button-slider slider-max">
                   <span class="visually-hidden">Максимальная цена</span>
                 </button>
               </div>
@@ -356,7 +351,6 @@
           </div>
         </section>
       </footer>
-    </div>
     </div>
   </body>
 </html>
