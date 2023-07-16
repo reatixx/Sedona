@@ -1431,6 +1431,7 @@ cursor: pointer;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 64px;
 }
 
@@ -1487,6 +1488,7 @@ cursor: pointer;
 
 .modal-message {
 color: #333333;
+margin: auto;
 margin-top: 4px;
 margin-left: 157px;
 margin-bottom: 23px;
