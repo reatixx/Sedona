@@ -120,7 +120,7 @@ img {
 
 .navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 182px;
+  grid-template-columns: 65% 1fr 182px;
   margin-left: 168px;
   width: 950px;
 }
@@ -290,7 +290,7 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  max-width: 620px;
+  max-width: 750px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -300,7 +300,7 @@ img {
   line-height: 26px;
   text-align: center;
   margin: 0 auto;
-  max-width: 660px;
+  max-width: 750px;
 }
 
 .first_description {
@@ -545,7 +545,7 @@ img {
   line-height: 24px;
   font-size: 18px;
   font-family: inherit;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
 }
 
 .subscribe-field:hover {
@@ -587,8 +587,9 @@ background-color: #E5E5E5;
 .footer-contacts {
   display: grid;
   align-items: center;
-  grid-template-columns: 200px 488px 200px;
+  grid-template-columns: auto 50% auto;
   column-gap: 100px;
+  width: 100%;
 }
 
 .footer-social-list {
@@ -632,6 +633,7 @@ background-color: #E5E5E5;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: block;
 }
 
 .contacts-phone:hover,
@@ -644,9 +646,11 @@ background-color: #E5E5E5;
 }
 
 .wrapper-copyrights {
-  padding-left: 57px;
-  padding-top: 3px;
+  display: flex;
+  justify-content: end;
+  align-self: end;
 }
+
 .button-academy {
   display: block;
 }
