@@ -1202,6 +1202,7 @@ cursor: pointer;
   height: auto;
   margin-bottom: 15px;
   display: block;
+  object-fit: contain;
 }
 
 .hotel-price {
@@ -1487,11 +1488,11 @@ cursor: pointer;
 }
 
 .modal-message {
-color: #333333;
-margin: auto;
-margin-top: 4px;
-margin-left: 157px;
-margin-bottom: 23px;
+  color: #333333;
+  margin: auto;
+  margin-top: 4px;
+  margin-left: 157px;
+  margin-bottom: 23px;
 }
 
 .modal-message.error {
