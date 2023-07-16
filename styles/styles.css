@@ -1348,3 +1348,267 @@ cursor: pointer;
   background: none;
   color: #000000;
 }
+
+/* Modal.html */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 64px 70px;
+}
+
+.modal-auth {
+  width: 717px;
+  border-radius: 30px;
+  padding: 64px 70px;
+}
+
+.button-modal-close {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: 52px;
+  top: 64px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.modal-icon-close {
+  background-image: url(../img/modal-button-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: block;
+}
+
+.button-modal-close:hover {
+  background-color: #e6e6e6;
+}
+
+.button-modal-close:focus {
+  outline: 3px solid #82b3d3;
+}
+
+.button-modal-close:active {
+  background-color: #e6e6e6;
+}
+
+.button-modal-close:active .modal-icon-close {
+  opacity: 30%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.modal-booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-arrival,
+.modal-departure {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.hotel-booking {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.input-date {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  background-image: url(../img/modal-button-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  width: 440px;
+  margin-left: 24px;
+}
+
+.input-date:hover {
+  background-color: #E6E6E6;
+}
+
+.input-date:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.input-date:active {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.modal-message {
+color: #333333;
+margin-top: 4px;
+margin-left: 157px;
+margin-bottom: 23px;
+}
+
+.modal-message.error {
+  color: #FF5757;
+}
+
+.modal-tourists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.adults-number {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.button-adults-container {
+  display: flex;
+  width: 110px;
+  height: 48px;
+}
+
+.button-quantity {
+  padding: 14px 10px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.less-button {
+  border-radius: 4px 0 0 4px;
+}
+
+.more-button {
+  border-radius: 0 4px 4px 0;
+}
+
+.button-quantity:hover path {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.button-quantity:focus  {
+  border: 3px solid #82b3d3;
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.button-quantity:active path {
+  fill: #CCCCCC;
+  }
+
+.person-quanity {
+  width: 31px;
+  line-height: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
+}
+
+.children-number {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+}
+
+.modal-tooltip-button {
+  border: none;
+  background: none;
+  margin-right: 46px;
+  margin-left: 10px;
+}
+
+.tooltip-info-window {
+  color: #ffffff;
+  line-height: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  position: absolute;
+  margin: 0;
+  margin-top: 15px;
+  top: 40px;
+  left: -29px;
+  display: none;
+}
+
+.tooltip-info-window::before {
+content: "";
+position: absolute;
+background-image: url(../img/modal-triangle-message.svg);
+background-repeat: no-repeat;
+background-position: center bottom;
+width: 26px;
+height: 15px;
+left: 50%;
+top: -15px;
+}
+
+
+.modal-tooltip-button:hover + .tooltip-info-window,
+.modal-tooltip-button:focus + .tooltip-info-window {
+  display: block;
+}
+
+.button-children-container {
+  display: flex;
+  width: 110px;
+  height: 48px;
+}
+
+.modal-seach-button {
+  width: 577px;
+  min-height: 60px;
+  line-height: 24px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 48px;
+}
