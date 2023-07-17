@@ -395,7 +395,7 @@ img {
   color: #000000;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 500px;
+  width: 519px;
 }
 
 .lead-advantages {
@@ -403,7 +403,7 @@ img {
   line-height: 26px;
   text-align: center;
   margin: 0 auto;
-  max-width: 500px;
+  width: 520px;
 }
 
 .advantages-img {
@@ -482,6 +482,7 @@ img {
   display: block;
   width: 376px;
   margin: 0 auto;
+  margin-bottom: 3px;
   padding: 8px 50px;
 }
 
@@ -755,22 +756,31 @@ background-color: #E5E5E5;
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-filter-group {
   border: none;
   padding: 0;
   margin: 0;
-  width: 151px;
-  margin-right: 70px;
+  /* width: 151px; */
 }
 
-.catalog-filter-group.infrastructure {
-  margin-right: 69px;
+.catalog-filter-group.cost {
+  width: 288px;
+}
+
+.filter-1 {
+  display: flex;
+  gap: 70px;
+}
+
+.filter-2 {
+  display: flex;
+  gap: 70px;
 }
 
 .catalog-filter-group.type {
-  margin-right: 140px;
   text-transform: capitalize;
 }
 
@@ -778,7 +788,6 @@ background-color: #E5E5E5;
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 16px;
-  margin-right: 2px;
 }
 
 .catalog-filter-title {
@@ -824,6 +833,8 @@ background-color: #E5E5E5;
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .price {
@@ -896,7 +907,6 @@ background-color: #E5E5E5;
   min-height: 117px;
   justify-content: end;
   margin-bottom: 13px;
-  margin-left: 68px;
 }
 
 .button-res {
@@ -1202,6 +1212,7 @@ cursor: pointer;
   height: auto;
   margin-bottom: 15px;
   display: block;
+  object-fit: contain;
 }
 
 .hotel-price {
@@ -1487,11 +1498,11 @@ cursor: pointer;
 }
 
 .modal-message {
-color: #333333;
-margin: auto;
-margin-top: 4px;
-margin-left: 157px;
-margin-bottom: 23px;
+  color: #333333;
+  margin: auto;
+  margin-top: 4px;
+  margin-left: 157px;
+  margin-bottom: 23px;
 }
 
 .modal-message.error {
