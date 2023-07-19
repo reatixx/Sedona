@@ -431,11 +431,15 @@ img {
 .comfort-item {
   width: 400px;
   min-height: 385px;
-  padding: 75px 85px;
+  padding: 81px 85px 41px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+}
+
+.comfort-item.third {
+  padding: 77px 85px 41px;
 }
 
 .advantages-sublist-item {
