@@ -428,21 +428,11 @@ img {
 
 /*comfort*/
 
-.comfort-item {
+.advantages-sublist-item {
   width: 400px;
   min-height: 385px;
-  padding: 81px 85px 41px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-}
-
-.comfort-item.third {
-  padding: 77px 85px 41px;
-}
-
-.advantages-sublist-item {
+  padding: 77px 85px;
+  display: block;
   list-style: none;
 }
 
@@ -454,12 +444,22 @@ img {
   background-color: #ffffff;
 }
 
+.comfort-description {
+  margin: 0;
+  margin-top: 30px;
+}
+
 .comfort-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 30px 0 11px;
+  margin: 0;
+  margin-top: 30px;
   color: #000000;
+}
+
+.title-gift {
+  margin-top: 26px;
 }
 
 .search-hotels {
